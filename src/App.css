@@ -1,0 +1,166 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* question card */
+.card-question {
+  text-align: left;
+  padding: 5px;
+}
+
+.options-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* buttons */
+.btn-start {
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+}
+
+/* .btn-option {
+  appearance: none;
+  margin: 0;
+  border: 1px solid #4d5b9e;
+  color: #293264;
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.btn-option:focus {
+  outline: none;
+  background-color: #d6dbf5;
+} */
+.donate-now {
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate-now li {
+  float: left;
+  margin: 0 10px 0 0;
+  width: 120px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate-now label,
+.donate-now input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.donate-now input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+}
+
+.donate-now input[type="radio"]:checked + label,
+.Checked + label {
+  background: #d6dbf5;
+}
+
+.donate-now label {
+  padding: 5px;
+  border: 1px solid #4d5b9e;
+  cursor: pointer;
+  z-index: 90;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.donate-now label:hover {
+  background: #ddd;
+}
+
+.btn-check {
+  color: #f5f7fb;
+  background-color: #4d5b9e;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+/* images */
+.blob-1 {
+  position: fixed;
+  width: 18.75rem;
+  height: 235px;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.blob-2 {
+  position: fixed;
+  width: 297px;
+  height: 235px;
+
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.options-container {
+  margin-bottom: 1.25rem;
+}
+
+.divider {
+  border: 0.1px solid #dbdef0;
+  margin-bottom: 1.25rem;
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
