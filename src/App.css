@@ -23,7 +23,7 @@
   color: #f5f7fb;
 }
 
-/* .btn-option {
+.btn-option {
   appearance: none;
   margin: 0;
   border: 1px solid #4d5b9e;
@@ -38,8 +38,8 @@
 .btn-option:focus {
   outline: none;
   background-color: #d6dbf5;
-} */
-.donate-now {
+}
+/* .donate-now {
   list-style-type: none;
   margin: 25px 0 0 0;
   padding: 0;
@@ -90,7 +90,7 @@
 
 .donate-now label:hover {
   background: #ddd;
-}
+} */
 
 .btn-check {
   color: #f5f7fb;
