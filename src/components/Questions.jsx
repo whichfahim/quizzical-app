@@ -36,61 +36,6 @@ export default function Questions(props) {
       <div className="card-question">
         <h3>{parse(question.question)}</h3>
         <div className="options-container">
-          {/* <ul className="ul-options-container">
-            <li>
-              <input
-                type="radio"
-                id="option-1"
-                value="option-1"
-                name="radio-group"
-                className="btn-option"
-              />
-              <label htmlFor="option-1">
-                {parse(question.incorrect_answers[0])}
-              </label>
-              <br />
-            </li>
-            <li>
-              <input
-                type="radio"
-                id="option-2"
-                value="option-2"
-                className="btn-option"
-                name="radio-group"
-              />
-              <label htmlFor="option-2">
-                {parse(question.incorrect_answers[1])}
-              </label>
-              <br />
-            </li>
-            <li>
-              <input
-                type="radio"
-                id="option-3"
-                value="option-3"
-                className="btn-option"
-                name="radio-group"
-              />
-              <label htmlFor="option-3">
-                {parse(question.incorrect_answers[2])}
-              </label>
-              <br />
-            </li>
-            <li>
-              <input
-                type="radio"
-                id="option-4"
-                value="option-4"
-                name="radio-group"
-                className={
-                  props.showAnswers ? "btn-option-correct" : "btn-option"
-                }
-              />
-              <label htmlFor="option-4">{parse(question.correct_answer)}</label>
-              <br />
-            </li>
-          </ul> */}
-
           <button className="btn-option" name="btn-group">
             {parse(question.incorrect_answers[0])}
           </button>

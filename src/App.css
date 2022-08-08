@@ -29,6 +29,7 @@
   border: 1px solid #4d5b9e;
   color: #293264;
   transition: 0.3s;
+  background-color: transparent;
 
   padding: 5px;
   cursor: pointer;
