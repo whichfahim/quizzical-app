@@ -11,7 +11,7 @@
   padding: 5px;
 }
 
-.options-container {
+.options-ul {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -29,6 +29,18 @@
   border: 1px solid #4d5b9e;
   color: #293264;
   transition: 0.3s;
+
+  padding: 5px;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.btn-option-correct {
+  appearance: none;
+  margin: 0;
+  background-color: #94d7a2;
+  color: #293264;
+  transition: 0.3s;
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
@@ -39,28 +51,26 @@
   outline: none;
   background-color: #d6dbf5;
 }
-/* .donate-now {
+
+.ul-options-container {
   list-style-type: none;
   margin: 25px 0 0 0;
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
 }
 
-.donate-now li {
-  float: left;
+.ul-options-container li {
   margin: 0 10px 0 0;
-  width: 120px;
+
   height: 40px;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 180px;
 }
 
-.donate-now label,
-.donate-now input {
+.ul-options-container label,
+.ul-options-container input {
   display: block;
   position: absolute;
   top: 0;
@@ -69,28 +79,35 @@
   bottom: 0;
 }
 
-.donate-now input[type="radio"] {
+.ul-options-container input[type="radio"] {
   opacity: 0.01;
   z-index: 100;
+  cursor: pointer;
 }
 
-.donate-now input[type="radio"]:checked + label,
-.Checked + label {
+.ul-options-container input[type="radio"]:checked + label {
   background: #d6dbf5;
 }
 
-.donate-now label {
+/* .ul-options-container input[type="radio"]:checked + label,
+.Checked + label {
+  background: #d6dbf5;
+} */
+
+.ul-options-container label {
   padding: 5px;
   border: 1px solid #4d5b9e;
-  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
   z-index: 90;
   border-radius: 8px;
   text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 7px;
 }
-
-.donate-now label:hover {
-  background: #ddd;
-} */
 
 .btn-check {
   color: #f5f7fb;
@@ -121,7 +138,7 @@
   z-index: -1;
 }
 
-.options-container {
+.form-options {
   margin-bottom: 1.25rem;
 }
 
