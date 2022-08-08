@@ -28,7 +28,7 @@ export default function Questions() {
       <div className="card-question">
         <h3>{parse(question.question)}</h3>
         <div className="options-container">
-          {/* <ul className="donate-now">
+          <ul className="donate-now">
             <li>
               <input
                 type="radio"
@@ -80,9 +80,9 @@ export default function Questions() {
               <label for="option-4">{parse(question.correct_answer)}</label>
               <br />
             </li>
-          </ul> */}
+          </ul>
 
-          <button className="btn-option">
+          {/* <button className="btn-option">
             {parse(question.incorrect_answers[0])}
           </button>
           <button className="btn-option">
@@ -93,7 +93,7 @@ export default function Questions() {
           </button>
           <button className="btn-option">
             {parse(question.incorrect_answers[2])}
-          </button>
+          </button> */}
         </div>
         <hr className="divider" />
       </div>
