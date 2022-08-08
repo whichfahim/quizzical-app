@@ -35,7 +35,7 @@ export default function Questions(props) {
     return (
       <div className="card-question">
         <h3>{parse(question.question)}</h3>
-        <div className="form-options">
+        <div className="options-container">
           {/* <ul className="ul-options-container">
             <li>
               <input
@@ -94,7 +94,10 @@ export default function Questions(props) {
           <button className="btn-option" name="btn-group">
             {parse(question.incorrect_answers[0])}
           </button>
-          <button className="btn-option" name="btn-group">
+          <button
+            className={props.showAnswers ? "btn-option-correct" : "btn-option"}
+            name="btn-group"
+          >
             {parse(question.correct_answer)}
           </button>
           <button className="btn-option" name="btn-group">

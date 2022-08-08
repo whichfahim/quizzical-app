@@ -33,6 +33,10 @@
   padding: 5px;
   cursor: pointer;
   z-index: 90;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .btn-option-correct {
@@ -52,7 +56,7 @@
   background-color: #d6dbf5;
 }
 
-.ul-options-container {
+/* .ul-options-container {
   list-style-type: none;
   margin: 25px 0 0 0;
   padding: 0;
@@ -87,14 +91,14 @@
 
 .ul-options-container input[type="radio"]:checked + label {
   background: #d6dbf5;
-}
+} */
 
 /* .ul-options-container input[type="radio"]:checked + label,
 .Checked + label {
   background: #d6dbf5;
 } */
 
-.ul-options-container label {
+/* .ul-options-container label {
   padding: 5px;
   border: 1px solid #4d5b9e;
   white-space: nowrap;
@@ -107,7 +111,7 @@
   font-size: 15px;
   font-weight: 500;
   border-radius: 7px;
-}
+} */
 
 .btn-check {
   color: #f5f7fb;
@@ -138,9 +142,15 @@
   z-index: -1;
 }
 
-.form-options {
+.options-container {
+  display: flex;
+  gap: 15px;
   margin-bottom: 1.25rem;
 }
+
+/* .form-options {
+  margin-bottom: 1.25rem;
+} */
 
 .divider {
   border: 0.1px solid #dbdef0;
