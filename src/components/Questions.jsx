@@ -25,9 +25,10 @@ export default function Questions() {
 
   const questionEl = questions.map((question) => {
     return (
-      <div className="card-question">
-        <h3>{parse(question.question)}</h3>
-        <form className="ul-options-container">
+      <form className="form">
+        <div className="card-question">
+          <h3>{parse(question.question)}</h3>
+
           <ul className="ul-options">
             <li>
               <input
@@ -75,15 +76,16 @@ export default function Questions() {
                 id="option-4"
                 name="fav_language"
                 value="option-4"
-                className="btn-option"
+                className={"btn-option"}
               />
               <label for="option-4">{parse(question.correct_answer)}</label>
               <br />
             </li>
           </ul>
-        </form>
-        <hr className="divider" />
-      </div>
+
+          <hr className="divider" />
+        </div>
+      </form>
     );
   });
 

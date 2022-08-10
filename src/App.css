@@ -40,29 +40,35 @@
   background-color: #d6dbf5;
 } */
 
-.ul-options-container {
+.form {
   list-style-type: none;
   margin: 25px 0 0 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .ul-options {
   display: flex;
   align-items: center;
   justify-content: left;
-  gap: 15px;
+  gap: 2rem;
+  padding-left: 0;
 }
 
-.ul-options-container li {
-  float: left;
-  margin: 0 5px 0 0;
-  width: 100px;
+.form li {
+  /* float: left; */
+  width: 150px;
   height: 40px;
   position: relative;
+  text-align: center;
+
+  display: flex;
 }
 
-.ul-options-container label,
-.ul-options-container input {
+.form label,
+.form input {
   display: block;
   position: absolute;
   top: 0;
@@ -71,20 +77,21 @@
   bottom: 0;
 }
 
-.ul-options-container input[type="radio"] {
+.form input[type="radio"] {
   opacity: 0.01;
   z-index: 100;
+  cursor: pointer;
 }
 
-.ul-options-container input[type="radio"]:checked + label,
+.form input[type="radio"]:checked + label,
 .Checked + label {
   background: #d6dbf5;
 }
 
-.ul-options-container label {
+.form label {
   padding: 5px;
   border: 1px solid #4d5b9e;
-  cursor: pointer;
+
   z-index: 90;
   border-radius: 8px;
   display: block;
@@ -92,10 +99,6 @@
   text-overflow: ellipsis;
   overflow: hidden;
   width: 100%;
-}
-
-.ul-options-container label:hover {
-  background: #ddd;
 }
 
 .btn-check {
