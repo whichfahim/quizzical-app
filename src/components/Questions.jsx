@@ -35,23 +35,24 @@ export default function Questions(props) {
     return (
       <div className="card-question">
         <h3>{parse(question.question)}</h3>
-        <div className="options-container">
-          <button className="btn-option" name="btn-group">
+        <form className="options-container">
+          <button type="button" className="btn-option" id="btn-option-1">
             {parse(question.incorrect_answers[0])}
           </button>
           <button
+            type="button"
             className={props.showAnswers ? "btn-option-correct" : "btn-option"}
-            name="btn-group"
+            id="btn-option-2"
           >
             {parse(question.correct_answer)}
           </button>
-          <button className="btn-option" name="btn-group">
+          <button type="button" className="btn-option" id="btn-option-3">
             {parse(question.incorrect_answers[1])}
           </button>
-          <button className="btn-option" name="btn-group">
+          <button type="button" className="btn-option" id="btn-option-4">
             {parse(question.incorrect_answers[2])}
           </button>
-        </div>
+        </form>
         <hr className="divider" />
       </div>
     );
